@@ -1,0 +1,16 @@
+<div class="job-content">
+    <h3>{{ job.title }}</h3>
+    {% if job.short_description %}
+        <h4>{{ job.short_description }}</h4>
+    {% endif %}
+    <div class="long-description">
+        {{ job.long_description|safe }}
+    </div>
+    {% if job.qualifications %}
+        <div class="qualifications">
+            <h4>Qualifications</h4>
+            {{ job.qualifications|safe }}
+        </div>
+    {% endif %}
+    <p><a href="mailto:{{ job.contact_email }}">Contact us</a></p>
+</div>

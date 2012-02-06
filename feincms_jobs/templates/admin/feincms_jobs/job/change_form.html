@@ -1,0 +1,17 @@
+{% extends 'admin/feincms/item_editor.html' %}
+
+{% block extrahead %}{{ block.super }}
+{% block init_richtext %}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(contentblock_init_handlers).each(function (index, fn) { fn(); });
+    });
+</script>
+{% endblock %}
+{% endblock %}
+
+{% block content %}
+<div id="frontend_editor">
+    {{ block.super }}
+</div>
+{% endblock %}
