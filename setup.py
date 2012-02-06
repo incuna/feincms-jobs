@@ -16,5 +16,5 @@ setup(
     author = 'Incuna Ltd',
     author_email = 'dev@incuna.com',
     url = 'http://github.com/incuna/feincms-jobs',
-    long_description = ''
+    long_description = open('README.markdown', 'r').read()
 )
