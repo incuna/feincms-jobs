@@ -12,5 +12,5 @@
             {{ job.qualifications|safe }}
         </div>
     {% endif %}
-    <p><a href="mailto:{{ job.contact_email }}">Contact us</a></p>
+    <p><a href="mailto:{{ job.contact_email }}?subject={{ job.title|entityencode }}">Contact us</a></p>
 </div>
