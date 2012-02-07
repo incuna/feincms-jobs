@@ -1,1 +1,2 @@
 recursive-include feincms_jobs/templates *
+include README.markdown
